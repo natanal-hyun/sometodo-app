@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/back_b"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_selector"
+        android:backgroundTint="#560F0F"
+        android:minWidth="0dp"
+        android:minHeight="0dp"
+        android:text="돌아가기"
+        android:textSize="15dp"
+        app:backgroundTint="#A40E0E" />
+
+    <TextView
+        android:id="@+id/budgetingMonth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="3월 예산"
+        android:textSize="19dp" />
+
+    <TextView
+        android:id="@+id/budgetSum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:text="예산합계"
+        android:textSize="23dp"
+        android:textStyle="bold" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="#A30E0E" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/budget_rv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/fixBudget"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/button_selector"
+        android:backgroundTint="#560F0F"
+        android:minWidth="0dp"
+        android:minHeight="0dp"
+        android:text="설정"
+        android:textSize="15dp"
+        app:backgroundTint="#A40E0E" />
+</LinearLayout>

@@ -1,0 +1,24 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.ToDoList" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.ToDoList" parent="Base.Theme.ToDoList" />
+
+    <!-- 스플래시 테마 -->
+    <style name="Theme.ToDoList.Splash" parent="Theme.SplashScreen">
+        <!-- 배경색 -->
+        <item name="windowSplashScreenBackground">#6200EE</item>
+
+        <!-- 앱 아이콘 -->
+        <item name="windowSplashScreenAnimatedIcon">@mipmap/ic_launcher</item>
+
+        <!-- 2초 유지 -->
+        <item name="windowSplashScreenAnimationDuration">2000</item>
+
+        <!-- 스플래시 이후 적용할 앱 기본 테마 -->
+        <item name="postSplashScreenTheme">@style/Theme.ToDoList</item>
+    </style>
+</resources>

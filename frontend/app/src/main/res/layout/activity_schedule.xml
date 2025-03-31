@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- 스크롤 가능한 화면 -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="18dp"
+            android:paddingHorizontal="24dp">
+
+            <Button
+                android:id="@+id/schedule_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#00FF6B"
+                android:fontFamily="@font/cafe"
+                android:text="일정 📜"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                app:cornerRadius="5pt"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:strokeColor="#000000"
+                app:strokeWidth="1pt" />
+
+            <Button
+                android:id="@+id/ToDo_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:backgroundTint="#FFFFFF"
+                android:fontFamily="@font/cafe"
+                android:text="ToDo"
+                android:textColor="#03A9F4"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                app:cornerRadius="5pt"
+                app:layout_constraintStart_toEndOf="@+id/schedule_button"
+                app:layout_constraintTop_toTopOf="parent"
+                app:strokeColor="#000000"
+                app:strokeWidth="1pt" />
+
+            <TextView
+                android:id="@+id/tv_Day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/alata"
+                android:text="TV_DAY"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/ToDo_button"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/image_line"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/schedule_button"
+                app:srcCompat="@drawable/image_line" />
+
+            <CalendarView
+                android:id="@+id/calendarView"
+                style="@android:style/Widget.DeviceDefault.CalendarView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border_calender"
+                android:dateTextAppearance="@style/TextAppearance.AppCompat.Large"
+                android:fadingEdgeLength="2dp"
+                android:focusedMonthDateColor="#2B2D30"
+                android:selectedWeekBackgroundColor="#F6F1C1"
+                android:soundEffectsEnabled="false"
+                android:unfocusedMonthDateColor="#66ED0303"
+                android:weekDayTextAppearance="@style/TextAppearance.AppCompat.Large"
+                android:weekNumberColor="#33B40000"
+                android:weekSeparatorLineColor="#90C5AC"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/image_line" />
+
+            <LinearLayout
+                android:id="@+id/list_box_layout"
+                android:layout_width="0dp"
+                android:minHeight="180dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/border6"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/calendarView" >
+
+                <TextView
+                    android:id="@+id/tv_display_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3pt"
+                    android:layout_marginBottom="3pt"
+                    android:fontFamily="@font/cafe"
+                    android:text="TextView"
+                    android:textColor="#000000"
+                    android:textSize="16dp" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/sad_image_main"
+                android:layout_width="113dp"
+                android:layout_height="93dp"
+                android:layout_marginTop="18dp"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/list_box_layout"
+                app:srcCompat="@drawable/sad_image" />
+
+            <TextView
+                android:id="@+id/tv_noSchedule"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:paddingHorizontal="24dp"
+                android:fontFamily="@font/cafe"
+                android:text="2025년 12월 12의 일정이 없습니다."
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/sad_image_main" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/border5"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/list_box_layout">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/create_button"
+                        android:layout_width="30dp"
+                        android:layout_height="27dp"
+                        android:layout_margin="3pt"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/plus_button" />
+
+                    <ImageView
+                        android:id="@+id/search_button"
+                        android:layout_width="30dp"
+                        android:layout_height="27dp"
+                        android:layout_margin="3pt"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/search_image" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/cafe"
+                        android:gravity="center"
+                        android:text="추가하기"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/textView15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/cafe"
+                        android:gravity="center"
+                        android:text="조회하기"
+                        android:textSize="20dp" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <!-- 하단 네비게이션 바 (고정) -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:menu="@menu/bottom_nav_menu"/>
+</LinearLayout>

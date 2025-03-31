@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bar6"
+    android:layout_width="435dp"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="3pt"
+    android:layout_marginTop="6pt"
+    android:background="@drawable/bolder7">
+
+    <ImageView
+        android:id="@+id/imageView18"
+        android:layout_width="wrap_content"
+        android:layout_height="42dp"
+        android:layout_margin="2pt"
+        app:srcCompat="@drawable/gray_bar" />
+
+    <TextView
+        android:id="@+id/tv_finish_content"
+        android:layout_width="250dp"
+        android:layout_height="match_parent"
+        android:fontFamily="@font/cafe"
+        android:gravity="center|left"
+        android:text="TextView"
+        android:textColor="#000000"
+        android:textSize="23dp" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom"
+        android:fontFamily="@font/cafe"
+        android:gravity="bottom|center"
+        android:text="중요도 : "
+        android:textColor="#000000"
+        android:textSize="17dp" />
+
+    <TextView
+        android:id="@+id/tv_finish_importance"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom"
+        android:fontFamily="@font/cafe"
+        android:gravity="bottom|center"
+        android:text="TextView"
+        android:textColor="#000000"
+        android:textSize="17dp" />
+</LinearLayout>

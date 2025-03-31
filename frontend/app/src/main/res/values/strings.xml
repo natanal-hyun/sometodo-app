@@ -1,0 +1,73 @@
+<resources>
+    <!-- 앱 기본 정보 -->
+    <string name="app_name">To Do List</string>
+    <string name="app_logo">앱 로고</string>
+
+    <!-- 인증(Auth) 관련 -->
+    <string name="auth_email">이메일</string>
+    <string name="auth_password">비밀번호</string>
+    <string name="auth_password_check">비밀번호 확인</string>
+    <string name="auth_nickname">닉네임</string>
+
+    <string name="auth_login">이미 계정이 있습니다.</string>
+    <string name="auth_sign_up">계정이 없습니다.</string>
+
+    <!-- 버튼(Button) 관련 -->
+    <string name="btn_login">로그인</string>
+    <string name="btn_sign_up">회원가입</string>
+
+    <string name="btn_login_for_google">구글로 로그인</string>
+
+    <string name="btn_back">뒤로가기</string>
+    <string name="btn_save">저장</string>
+    <string name="btn_change">변경</string>
+
+    <!-- 기타 -->
+    <string name="or">OR</string>
+
+    <!-- 메뉴(Menu) 관련 -->
+    <string name="nav_schedule">스케쥴</string>
+    <string name="nav_wallet">가계부</string>
+    <string name="nav_group">그룹</string>
+    <string name="nav_settings">설정</string>
+
+    <!-- 프로필(Profile) 관련 -->
+    <string name="profile_image_url">이미지 URL</string>
+    <string name="profile_nickname">닉네임</string>
+    <string name="profile_email">이메일</string>
+    <string name="profile_status_message">상태 메세지</string>
+
+    <string name="profile_input_image_url">이미지 URL 입력</string>
+    <string name="profile_input_nickname">닉네임 입력</string>
+    <string name="profile_input_email">email@email.com</string>
+    <string name="profile_input_status_message">상태 메세지 입력</string>
+
+    <!-- 비밀번호 변경 관련 -->
+    <string name="password_now">현재 비밀번호</string>
+    <string name="password_new">새 비밀번호</string>
+    <string name="password_check">새 비밀번호 확인</string>
+
+    <string name="password_input_now">현재 비밀번호 입력</string>
+    <string name="password_input_new">새 비밀번호 입력</string>
+    <string name="password_input_check">새 비밀번호 확인 입력</string>
+
+    <string-array name="categories_array">
+        <item>식비</item>
+        <item>쇼핑</item>
+        <item>교통/통신/주거</item>
+        <item>의료/건강/경조사</item>
+        <item>여행/숙박/문화</item>
+        <item>교육/학습</item>
+        <item>수입</item>
+    </string-array>
+
+    <string-array name="categories_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+    </string-array>
+</resources>
