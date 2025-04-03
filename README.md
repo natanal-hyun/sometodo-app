@@ -93,6 +93,7 @@
 <div align="center">
   <img src="https://github.com/user-attachments/assets/495fe2e1-975a-444d-b1d3-395e91333d2d" alt="구글 로그인 화면" width="300">
 </div>
+![image](https://github.com/user-attachments/assets/df971de6-a757-46ae-b2c9-a5af3b654c49)
 
 ---
 
