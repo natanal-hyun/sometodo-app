@@ -91,9 +91,8 @@
 - 이메일 중복 시 기존 계정으로 로그인 실패 처
 
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/495fe2e1-975a-444d-b1d3-395e91333d2d" alt="구글 로그인 화면" width="300">
+  <img src="https://github.com/user-attachments/assets/ccdccd4a-5486-4c55-b1b8-39bb65c7ce72" alt="구글 로그인 화면" width="300">
 </div>
-![image](https://github.com/user-attachments/assets/df971de6-a757-46ae-b2c9-a5af3b654c49)
 
 ---
 
