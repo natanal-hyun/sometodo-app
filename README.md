@@ -616,4 +616,9 @@
 - 설정 → 프로필 수정 동작 → 비밀번호 변경 → 로그아웃
 - 바뀐 비밀번호로 재 로그인
 
-[![Sometodo 프로젝트 | 계정 파트 시연 영상](https://img.youtube.com/vi/bZ9ycIyjW48/0.jpg)](https://www.youtube.com/shorts/bZ9ycIyjW48)
+<div align="center">
+  <a href="https://www.youtube.com/shorts/bZ9ycIyjW48" target="_blank">
+    <img src="https://img.youtube.com/vi/bZ9ycIyjW48/0.jpg" alt="Sometodo 시연 영상" width="300">
+  </a>
+  <p>🎬 <a href="https://www.youtube.com/shorts/bZ9ycIyjW48" target="_blank">시연 영상 보러가기</a></p>
+</div>
