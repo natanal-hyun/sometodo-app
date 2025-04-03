@@ -21,9 +21,24 @@ import java.io.IOException;
 public class JwtAuthenticationFilter extends OncePerRequestFilter {
     private final JwtUtil jwtUtil;
 
+    private static final List<String> WHITELIST = List.of(
+            "/api/auth/signup",
+            "/api/auth/login",
+            "/api/auth/google/login",
+            "/api/auth/refresh"
+    );
+
     @Override
     protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain)
             throws ServletException, IOException {
+        String path = request.getRequestURI();
+
+        // 인증이 필요 없는 경로는 필터 건너뛰기
+        if (WHITELIST.stream().anyMatch(path::startsWith)) {
+            filterChain.doFilter(request, response);
+            return;
+        }
+                
         String token = resolveToken(request);
 
         if (token != null && jwtUtil.validateToken(token)) {
